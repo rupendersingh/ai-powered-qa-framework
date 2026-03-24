@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Valid login",
+    "steps": [
+      "Enter valid username",
+      "Enter valid password",
+      "Click login"
+    ],
+    "expected": "User redirected to dashboard",
+    "priority": "High"
+  },
+  {
+    "name": "Invalid password",
+    "steps": [
+      "Enter valid username",
+      "Enter wrong password",
+      "Click login"
+    ],
+    "expected": "Error message displayed",
+    "priority": "High"
+  }
+]
