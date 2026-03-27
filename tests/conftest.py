@@ -1,5 +1,7 @@
+import logging
 import sys
 import os
+import allure
 import pytest
 import json
 import time
@@ -31,36 +33,70 @@ def pytest_runtest_makereport(item, call):
     rep = outcome.get_result()
     print("HOOK:", rep.when, rep.failed)
 
-    if rep.failed:
-        driver = item.funcargs.get("driver",None)
-        print("DRIVER:", driver)
+    # Only act after test execution phase
+    if rep.when == "call":
+        driver = item.funcargs.get("driver", None)
+        
+        if driver is None:
+            return
+        
+        test_name = item.name
+         # -------------------------------
+        # ALWAYS ATTACH SCREENSHOT
+        # -------------------------------
+        screenshot_path= f"reports/{test_name}.png"
+        driver.save_screenshot(screenshot_path)
 
-        if driver:
-            ts = time.strftime("%Y%m%d_%H%M%S")
-            base = os.getcwd()
-            folder = os.path.join(base, "reports", "failures", f"{item.name}__FAIL__{ts}")
-            os.makedirs(folder,exist_ok=True)
+        with open(screenshot_path,"rb") as f:
+            allure.attach(
+                f.read(),
+                name = "screenshot",
+                attachment_type = allure.attachment_type.PNG
+            )
 
-            screenshot_path = os.path.join(folder, "screenshot.png")
-            report_path = os.path.join(folder, "failure_report.json")
+            # -------------------------------
+        # ATTACH HEAL LOG (IF EXISTS)
+        # -------------------------------
 
-            # Screenshot
-            driver.save_screenshot(screenshot_path)
+        heal_log_path = "utils/heal_log.json"
+        if os.path.exists(heal_log_path):
+            with open(heal_log_path,"r") as f:
+                allure.attach(
+                    f.read(),
+                    name= "self-Heal Log",
+                    attachment_type=allure.attachment_type.JSON
+                )
+        # -------------------------------
+        # ON FAILURE → AI ANALYSIS
+        # -------------------------------
 
-            # Capture log (basic)
-            log_text = str(rep.longrepr)
+        if rep.failed:
 
             try:
-                analysis = analyze(log_text, driver.title)
-            except Exception as e:
-                analysis = {
-                    "error_type": "Analyzer Failure",
-                    "likely_cause": str(e),
-                    "suggested_fix": "Check LLM response format",
-                    "confidence": "Low"
-                }
+                log_text = str(rep.longrepr)
+                analysis = analyze(
+                    screenshot_path = screenshot_path,
+                    log_text=log_text,
+                    page_title=driver.title
+                )
+                # Save failure report JSON
+                failure_path = f"reports/{test_name}_failure.json"
+                with open(failure_path, "w") as f:
+                    json.dump(analysis,f,indent=2)
 
-            print("ANALYSIS:", analysis)
-            
-            with open(report_path, "w") as f:
-                json.dump(analysis, f, indent=2)
+                #Attach to Allure
+                allure.attach(
+                    json.dump(analysis, indent=2),
+                    name="AI Failure Analysis",
+                    attachment_type= allure.attachment_type.JSON
+                    )
+            except Exception as e:
+                # Fail-safe: do NOT break test reporting
+                error_msg = f"AI analysis failed: {str(e)}"
+                logging.error(error_msg)
+
+                allure.attach(
+                    error_msg,
+                    name="AI Analysis Error",
+                    attachment_type=allure.attachment_type.TEXT
+                )
