@@ -32,7 +32,7 @@ jobs:
           pytest tests/ --alluredir=reports/allure-results -v
 
       - name: Upload Allure Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: allure-results
