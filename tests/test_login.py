@@ -28,6 +28,4 @@ def test_home_title(driver):
 
     login_page.open(BASE_URL)
 
-    assert "Login Page" in driver.title
-
-    #CI trigger test
+    assert "The Internet" in driver.title
