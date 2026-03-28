@@ -1,0 +1,52 @@
+[
+  {
+    "primary": "('css selector', '#username')",
+    "used": "('xpath', \"//input[@id='username']\")",
+    "timestamp": "2026-03-25 22:12:03"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-25 22:23:54"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-25 22:24:58"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-25 22:25:17"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-25 22:27:35"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-25 22:27:55"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 08:32:00"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 08:32:22"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 08:49:22"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 08:49:44"
+  }
+]

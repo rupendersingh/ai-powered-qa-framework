@@ -8,7 +8,6 @@ Return ONLY JSON:
 {"error_type":"string","likely_cause":"string","suggested_fix":"string","confidence":"High|Med|Low"}
 """
 
-
 def analyze(screenshot_path, log_text, page_title):
     client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 

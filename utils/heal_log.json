@@ -68,5 +68,125 @@
     "primary": "('css selector', '#submit')",
     "used": "('xpath', \"//button[@type='submit']\")",
     "timestamp": "2026-03-27 09:05:12"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:17:45"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:18:02"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:29:24"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:29:40"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:39:20"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:39:35"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:43:48"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-27 22:44:03"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 07:46:32"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 07:46:49"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:23:38"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:23:56"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:29:34"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:29:52"
+  },
+  {
+    "primary": "('css selector', '#wrong-id')",
+    "used": "('xpath', \"//input[@id='username']\")",
+    "timestamp": "2026-03-28 08:50:44"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:50:50"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:52:02"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:52:23"
+  },
+  {
+    "primary": "('css selector', '#wrong-id')",
+    "used": "('xpath', \"//input[@id='username']\")",
+    "timestamp": "2026-03-28 08:53:04"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:53:10"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:55:24"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:55:45"
+  },
+  {
+    "primary": "('css selector', '#wrong-id')",
+    "used": "('xpath', \"//input[@id='username']\")",
+    "timestamp": "2026-03-28 08:56:21"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-03-28 08:56:27"
   }
 ]

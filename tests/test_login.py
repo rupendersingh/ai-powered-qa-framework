@@ -1,9 +1,8 @@
-#from base.base_test import BaseTest
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 
-#class TestLogin(BaseTest):
 BASE_URL = "https://the-internet.herokuapp.com/login"
+
 
 def test_login_valid(driver):
     login_page = LoginPage(driver)
@@ -14,15 +13,19 @@ def test_login_valid(driver):
 
     assert "Secure Area" in home_page.get_header_text()
 
+
 def test_login_invalid(driver):
     login_page = LoginPage(driver)
-    login_page.open(BASE_URL)
 
-    login_page.login("wrong","wrong")
+    login_page.open(BASE_URL)
+    login_page.login("wrong", "wrong")
+
     assert "Your username is invalid!" in login_page.get_message()
+
 
 def test_home_title(driver):
     login_page = LoginPage(driver)
+
     login_page.open(BASE_URL)
 
-    assert "The Internet" in driver.title
+    assert "Login Page" in driver.title
