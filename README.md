@@ -89,7 +89,7 @@ CI/CD → GitHub Actions → Allure Artifacts
 ---
 
 ## 📦 Project Structure
-ai-powered-qa-framework/
+ai-powered-qa-framework
 │
 ├── base/ # BasePage with reusable actions
 ├── pages/ # Page Object Models
@@ -103,12 +103,12 @@ ai-powered-qa-framework/
 
 ## ▶️ How to Run
 
-```bash
+``bash
 pip install -r requirements.txt
 pytest --alluredir=reports/allure-results
 allure serve reports/allure-results
 
-📎 Author
 
+📎 Author
 Rupender Singh
 QA Engineering Leader | AI-Powered Test Automation | BFSI Domain
