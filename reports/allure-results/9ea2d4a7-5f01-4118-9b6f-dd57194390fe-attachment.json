@@ -280,33 +280,5 @@
     "timestamp": "2026-04-02T07:51:56",
     "strategy": "fallback_chain",
     "confidence": "low"
-  },
-  {
-    "primary": "('id', 'wrong_id')",
-    "used": "('name', 'username')",
-    "timestamp": "2026-04-02T07:52:08",
-    "strategy": "fallback_chain",
-    "confidence": "low"
-  },
-  {
-    "primary": "('css selector', '#submit')",
-    "used": "('xpath', \"//button[@type='submit']\")",
-    "timestamp": "2026-04-02T07:52:13",
-    "strategy": "fallback_chain",
-    "confidence": "low"
-  },
-  {
-    "primary": "('css selector', '#wrong-id')",
-    "used": "('xpath', \"//input[@id='username']\")",
-    "timestamp": "2026-04-02T07:52:44",
-    "strategy": "fallback_chain",
-    "confidence": "low"
-  },
-  {
-    "primary": "('css selector', '#submit')",
-    "used": "('xpath', \"//button[@type='submit']\")",
-    "timestamp": "2026-04-02T07:52:50",
-    "strategy": "fallback_chain",
-    "confidence": "low"
   }
 ]

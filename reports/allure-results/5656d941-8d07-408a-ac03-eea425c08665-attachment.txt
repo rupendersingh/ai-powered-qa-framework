@@ -1,0 +1,15 @@
+STEP 3: login_page fixture created
+TEST VERSION 2
+URL OPEN CALLED
+FAILED locator 0: ('css selector', '#wrong-id')
+FAILED locator 1: ('xpath', "//*[@aria-label='#wrong-id']")
+FAILED locator 2: ('xpath', "//*[@placeholder='#wrong-id']")
+FAILED locator 3: ('name', '#wrong-id')
+FAILED locator 4: ('xpath', "//*[contains(text(),'#wrong-id')]")
+LOGGING HEAL EVENT
+FAILED locator 0: ('css selector', '#submit')
+FAILED locator 1: ('xpath', "//*[@aria-label='#submit']")
+FAILED locator 2: ('xpath', "//*[@placeholder='#submit']")
+FAILED locator 3: ('name', '#submit')
+FAILED locator 4: ('xpath', "//*[contains(text(),'#submit')]")
+LOGGING HEAL EVENT

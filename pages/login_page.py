@@ -2,15 +2,15 @@ from base.base_page import BasePage
 from selenium.webdriver.common.by import By
 
 class LoginPage(BasePage):
-
+    
     def __init__(self, driver):
         super().__init__(driver)
         
     USERNAME = [
-        (By.CSS_SELECTOR, "#username"),
-        (By.XPATH, "//input[@id='username']"),
-        (By.XPATH, "//input[contains(@placeholder,'user')]")
-    ]
+    (By.ID, "THIS_WILL_NEVER_EXIST_123"),
+    (By.NAME, "username"),
+    (By.XPATH, "//input[@type='text']")
+]
 
     PASSWORD = [
         (By.CSS_SELECTOR, "#password"),
