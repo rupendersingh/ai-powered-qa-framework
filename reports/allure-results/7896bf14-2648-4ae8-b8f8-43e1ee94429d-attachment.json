@@ -350,19 +350,5 @@
     "timestamp": "2026-04-02T08:09:19",
     "strategy": "fallback_chain",
     "confidence": "low"
-  },
-  {
-    "primary": "('css selector', '#wrong-id')",
-    "used": "('xpath', \"//input[@id='username']\")",
-    "timestamp": "2026-04-02T08:09:52",
-    "strategy": "fallback_chain",
-    "confidence": "low"
-  },
-  {
-    "primary": "('css selector', '#submit')",
-    "used": "('xpath', \"//button[@type='submit']\")",
-    "timestamp": "2026-04-02T08:09:58",
-    "strategy": "fallback_chain",
-    "confidence": "low"
   }
 ]
