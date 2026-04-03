@@ -1,1 +1,0 @@
-AI analysis failed: analyze() got an unexpected keyword argument 'screenshot_path'
