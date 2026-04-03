@@ -1,5 +1,8 @@
+import pytest
+import allure
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
+from utils.visual_utils import VisualValidator
 
 BASE_URL = "https://the-internet.herokuapp.com/login"
 
@@ -29,3 +32,31 @@ def test_home_title(driver):
     login_page.open(BASE_URL)
 
     assert "The Internet" in driver.title
+
+def test_login_visual(driver):
+
+    driver.get(BASE_URL)
+
+    visual = VisualValidator(driver, test_name="Login Visual Test")
+    visual.start()
+
+    #driver.execute_script("document.body.style.backgroundColor = 'red'")
+
+    # Before Login
+    visual.check("Login Page")
+
+    login_page = LoginPage(driver)
+    login_page.login("testuser", "password")
+
+    # After Login
+    visual.check("Dashboard UI")
+
+    result = visual.close()
+    
+    allure.attach(
+        str(result),
+        name="Visual Result",
+        attachment_type=allure.attachment_type.TEXT
+    )
+
+    assert result is not None

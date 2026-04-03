@@ -364,5 +364,159 @@
     "timestamp": "2026-04-02T08:09:58",
     "strategy": "fallback_chain",
     "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T08:44:05",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T08:44:10",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T08:44:21",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T08:44:26",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:03:09",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:03:14",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:03:24",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:03:29",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:03:57",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:04:02",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:09:39",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:09:44",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:09:54",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:10:00",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:10:30",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:10:36",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:14:03",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:14:09",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:14:24",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:14:31",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('id', 'THIS_WILL_NEVER_EXIST_123')",
+    "used": "('name', 'username')",
+    "timestamp": "2026-04-03T09:15:24",
+    "strategy": "fallback_chain",
+    "confidence": "low"
+  },
+  {
+    "primary": "('css selector', '#submit')",
+    "used": "('xpath', \"//button[@type='submit']\")",
+    "timestamp": "2026-04-03T09:15:31",
+    "strategy": "fallback_chain",
+    "confidence": "low"
   }
 ]
