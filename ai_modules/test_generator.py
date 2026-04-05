@@ -1,4 +1,5 @@
 from openai import OpenAI
+from ai_modules.llm_client import ask_llm
 import os
 import json
 
@@ -10,25 +11,33 @@ def get_client():
 
 #client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-SYS_PROMPT = """You are a QA engineer.
+SYS_PROMPT = """
+You are a senior QA engineer.
 
-Return ONLY a JSON array of test cases.
+Generate test cases in STRICT JSON format.
 
-Each test case:
-{
-  "name": "string",
-  "steps": ["step1", "step2"],
-  "expected": "string",
-  "priority": "High|Medium|Low"
-}
+Example:
 
-No explanation. Only JSON.
+[
+  {
+    "name": "Valid login",
+    "steps": ["Enter valid username", "Enter valid password", "Click login"],
+    "expected": "User lands on dashboard",
+    "priority": "High"
+  }
+]
+
+Rules:
+- Output ONLY JSON array
+- No explanation
+- No markdown
+- Follow exact schema
 """
 
 def generate(page_desc: str, rules: list, retries=2) -> list:
     
     # 🔹 MOCK MODE (fallback when no API or quota)
-    if not os.getenv("OPENAI_API_KEY") or os.getenv("MOCK_AI") == "true":
+    """ if not os.getenv("OPENAI_API_KEY") or os.getenv("MOCK_AI") == "true":
         return [
             {
                 "name": "Valid login",
@@ -42,26 +51,12 @@ def generate(page_desc: str, rules: list, retries=2) -> list:
                 "expected": "Error message displayed",
                 "priority": "High"
             }
-        ]
+        ]"""
 
     client = get_client()
 
-    for attempt in range(retries):
-        try:
-            user_prompt = f"Page: {page_desc}\nRules:\n" + "\n".join(f"- {r}" for r in rules)
+#for attempt in range(retries):
+    user_prompt = f"Page: {page_desc}\nRules:\n" + "\n".join(f"- {r}" for r in rules)
 
-            response = client.chat.completions.create(
-                model="gpt-3.5-turbo",
-                temperature=0,
-                messages=[
-                    {"role": "system", "content": SYS_PROMPT},
-                    {"role": "user", "content": user_prompt}
-                ]
-            )
-
-            raw = response.choices[0].message.content.strip()
-            return json.loads(raw)
-
-        except Exception as e:
-            if attempt == retries - 1:
-                raise e
+    raw = ask_llm(SYS_PROMPT, user_prompt,temperature=0)
+    return json.loads(raw)
